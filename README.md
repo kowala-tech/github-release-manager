@@ -14,10 +14,26 @@ This will download the latest release to the disk to a file in the current direc
 
 If there is an existing file called `.grm/my-user/my-repo` that contains the current name, then nothing will be downloaded and `grm` will return 1.
 
+This can then be used in shell scripts and Makefiles to trigger actions when the script is run:
+
+```
+#!/bin/bash
+
+echo "Making sure my-repo is up to date
+grm -o my-repo-lastest.tar my-user/my-repo
+
+if ! [ $? -eq 1 ]; then 
+    echo "The repo has changed or been installed for the first time"
+    tar -xvf my-repo-latest.tar /some/path
+else 
+    echo "The reapw as already up to date`
+fi
+```
+
 ### Full command syntax:
 
 ```
-Syntax: ../core/bin/grm [flags] <owner/repo>
+Syntax: grm [flags] <owner/repo>
 
 Flags:
 
