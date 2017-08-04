@@ -1,0 +1,6 @@
+pipeline:
+
+  test-and-build:
+    image: deis/go-dev
+    commands:
+      - glide install
