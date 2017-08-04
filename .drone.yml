@@ -4,6 +4,5 @@ pipeline:
     image: deis/go-dev
     commands:
       - glide install
-      - pwd
-      - export GOPATH=`pwd`
+      - ls vendor
       - go test cmd/grm/*.go
