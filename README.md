@@ -1,3 +1,5 @@
+[![Go Report Card](https://goreportcard.com/badge/github.com/kowala-tech/github-release-manager)](https://goreportcard.com/report/github.com/kowala-tech/github-release-manager)
+
 ## GRM: A tool for fetching the latest release assets from public GitHub Repositories
 
 ### Installation
