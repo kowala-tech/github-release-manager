@@ -6,4 +6,5 @@ pipeline:
       - glide install
       - ls -l
       - pwd
+      - export GOPATH=/drone
       - go test cmd/grm/*.go
