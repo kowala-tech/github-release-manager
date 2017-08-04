@@ -1,4 +1,4 @@
-package: kowala/github-release-manager
+package: github.com/kowala-tech/github-release-manager
 import:
 - package: github.com/google/go-github
 - package: github.com/google/go-querystring
