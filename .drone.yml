@@ -5,4 +5,4 @@ pipeline:
     commands:
       - glide install
       - go version
-      - go test cmd/grm/*.go
+      - go test $(go list ./... | grep -v /vendor/) 
