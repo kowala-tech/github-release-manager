@@ -4,5 +4,6 @@ pipeline:
     image: deis/go-dev
     commands:
       - glide install
-      - go version
+      - ls -l
+      - pwd
       - go test $(go list ./... | grep -v /vendor/) 
