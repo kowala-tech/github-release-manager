@@ -21,7 +21,7 @@ This can then be used in shell scripts and Makefiles to trigger actions when the
 ```
 #!/bin/bash
 
-echo "Making sure my-repo is up to date
+echo "Making sure my-repo is up to date"
 grm -o my-repo-lastest.tar my-user/my-repo
 
 if ! [ $? -eq 1 ]; then 
