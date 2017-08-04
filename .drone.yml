@@ -4,3 +4,4 @@ pipeline:
     image: deis/go-dev
     commands:
       - glide install
+      - go test cmd/grm/*.go
