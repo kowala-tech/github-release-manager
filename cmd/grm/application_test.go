@@ -73,7 +73,7 @@ func Test_AnApplicationCanFetchAReleaseAsset(t *testing.T) {
 		release := &github.RepositoryRelease{
 			TarballURL: &tarballURL,
 			Assets: []github.ReleaseAsset{
-				github.ReleaseAsset{
+				{
 					Name:               &names[0],
 					BrowserDownloadURL: &assetURL,
 				},
@@ -129,7 +129,7 @@ func Test_AnApplicationCanFindTheDownloadURLFromARepositoryRelease(t *testing.T)
 	release := &github.RepositoryRelease{
 		TarballURL: &tarballURL,
 		Assets: []github.ReleaseAsset{
-			github.ReleaseAsset{
+			{
 				Name:               &names[0],
 				BrowserDownloadURL: &assetURL,
 			},
@@ -225,8 +225,8 @@ func Test_AnApplicationCanFindAReleaseAssetFromASet(t *testing.T) {
 	names := []string{"A", "B"}
 
 	sampleAssets := []github.ReleaseAsset{
-		github.ReleaseAsset{Name: &names[0]},
-		github.ReleaseAsset{Name: &names[1]},
+		{Name: &names[0]},
+		{Name: &names[1]},
 	}
 
 	for cycle, test := range []struct {
