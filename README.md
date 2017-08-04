@@ -1,4 +1,4 @@
-[![Go Report Card](https://goreportcard.com/badge/github.com/kowala-tech/github-release-manager)](https://goreportcard.com/report/github.com/kowala-tech/github-release-manager)
+[![Build Status](http://ci.kowala.io/api/badges/kowala-tech/github-release-manager/status.svg)](http://ci.kowala.io/kowala-tech/github-release-manager) [![Go Report Card](https://goreportcard.com/badge/github.com/kowala-tech/github-release-manager)](https://goreportcard.com/report/github.com/kowala-tech/github-release-manager)
 
 ## GRM: A tool for fetching the latest release assets from public GitHub Repositories
 
@@ -28,7 +28,7 @@ if ! [ $? -eq 1 ]; then
     echo "The repo has changed or been installed for the first time"
     tar -xvf my-repo-latest.tar /some/path
 else 
-    echo "The reapw as already up to date`
+    echo "The repo as already up to date`
 fi
 ```
 
